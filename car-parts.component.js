@@ -9,18 +9,30 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var AppComponent = (function () {
-    function AppComponent() {
-        this.title = 'Ultra racing';
+var mock_1 = require('./mock');
+var CarPartsComponent = (function () {
+    function CarPartsComponent() {
     }
-    AppComponent = __decorate([
+    CarPartsComponent.prototype.ngOnInit = function () {
+        this.carParts = mock_1.CARPARTS;
+    };
+    CarPartsComponent.prototype.totalCarParts = function () {
+        var sum = 0;
+        for (var _i = 0, _a = this.carParts; _i < _a.length; _i++) {
+            var carPart = _a[_i];
+            sum += carPart.inStock;
+        }
+        return sum;
+    };
+    CarPartsComponent = __decorate([
         core_1.Component({
-            selector: 'my-app',
-            template: "<h1>{{title}}</h1>\n  <car-parts></car-parts>"
+            selector: 'car-parts',
+            templateUrl: 'app/car-parts.component.html',
+            styleUrls: ['app/car-parts.component.css']
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], CarPartsComponent);
+    return CarPartsComponent;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.CarPartsComponent = CarPartsComponent;
+//# sourceMappingURL=car-parts.component.js.map
