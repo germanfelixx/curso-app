@@ -1,7 +1,87 @@
+/*    * afecta todo*/
+*{
+
+      background: -webkit-linear-gradient(#BDBDBD,#BDBDBD) no-repeat fixed;
+  background: linear-gradient(#0d263c,#BDBDBD) no-repeat fixed;
+  color: #ffffff;
+ 
+
+}
+
+
 .description{
-     color: #444;
+     color:#000000;
      font-size: small;
+  
  }
  .price{
      font-weight: bold;
  }
+ .featured{
+     background: #57595D;
+     -webkit-border-image: -webkit-linear-gradient(right, #818fd8 0%, #cbb4e2 50%,
+     #a6f2f5 100%);
+     -o-border-image: linear-gradient(to left, #818fd8 0%, #cbb4e2 50%, #a6f2f5 100%);
+        border-image: linear-gradient(to left, #818fd8 0%, #cbb4e2 50%, #a6f2f5 100%);
+    border-image-slice: 1; 
+
+ }
+
+ .product-info{
+   
+	margin-left:25%; 
+   
+ 
+	  background-color:#E6E6E6;
+        border: 3px solid #FAFAFA;
+
+ 
+
+}
+
+.panel-body{
+    background:#E6E6E6;
+}
+
+.photo{
+
+ 
+	width:420px;
+	height:200px;
+    float:center;
+	background-color:#E6E6E6;
+	top: 500px;
+
+}
+ul, ol {
+	list-style:none; 
+}
+
+
+
+
+
+h2 {
+  font-weight: 400;
+  margin-top: 0;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+.price {
+  color: #66d9f7;
+}
+
+.inventory {
+
+    font-weight: bold;
+  color: #FF0040
+}
+
+.container {
+
+  max-width: 900px;
+}
+

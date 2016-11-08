@@ -16,7 +16,9 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: "<h1>{{title}}</h1>\n  <car-parts></car-parts>"
+            template: "<h1 class=\"titulo\">{{title}}</h1>\n  <car-parts></car-parts>",
+            styles: ["\n             .titulo{\n      text-align: center;\n\nfont-size:60px;letter-spacing:-0px;font-family:georgia;\ncolor: #fff;text-shadow: 0 0 5px #006699, 0 0 10px #006699, 0 0 15px #006699, 0 0 10px #006699, 0 0 15px #006699; /* Damos el resplandor*/\n-webkit-text-fill-color: #fff; /* Coloreamos el interior del texto*/\n-webkit-text-stroke-color:#fff; /* Color del borde exterior*/\n-webkit-text-stroke-width:0.2px;\n}\n\n        "
+            ]
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
